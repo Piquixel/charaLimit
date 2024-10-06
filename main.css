@@ -1,0 +1,60 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	user-select: none;
+}
+
+html {
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+	row-gap: 0.5rem;
+	min-height: 100vh;
+	background-color: hsl(0 0% 5%);
+	color: hsl(0 0% 100%);
+}
+
+input:not([type='checkbox']),
+textarea {
+	-webkit-appearance: none;
+	appearance: none;
+	border: unset;
+	background-color: hsl(0 0% 100% / 0.05);
+	border-radius: 0.4rem;
+	box-shadow: 0 0 6px 2px hsl(0 0% 0% / 0.2);
+	padding: 0.75em;
+	font-family: 'DM Sans', sans-serif;
+	resize: none;
+	color: hsl(0 0% 85%);
+}
+
+input[type='number'] {
+	text-align: center;
+	font-size: 14pt;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+	position: absolute;
+	display: none;
+}
+
+#counter {
+	font-family: 'Poppins', sans-serif;
+}
+
+#counter.overflowed {
+	color: red;
+}
+
+.checks > * {
+	cursor: pointer;
+}
